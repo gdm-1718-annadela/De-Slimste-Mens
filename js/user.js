@@ -5,6 +5,12 @@ function showRound(round) {
   } else {
     document.getElementById('content1').style.display = "none"
   }
+
+  if(round == "Two") {
+    document.getElementById('content2').style.display = "flex"
+  } else {
+    document.getElementById('content2').style.display = "none"
+  }
 }
 
 function points() {
