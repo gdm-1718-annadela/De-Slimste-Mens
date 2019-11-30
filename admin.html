@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jens.js" defer></script>
+</head>
+
+<body>
+    <div id="round-selector">
+        <a href="#" id="RondeOne" class="ronde">Ronde 1</a>
+        <a href="#" id="RondeTwo" class="ronde">Ronde 2</a>
+        <a href="#" id="RondeThree" class="ronde">Ronde 3</a>
+        <a href="#" id="RondeFour" class="ronde">Ronde 4</a>
+        <a href="#" id="RondeFive" class="ronde">Ronde 5</a>
+    </div>
+    <div id="nameBox">
+        <label>Team 1</label>
+        <input id="teamOne" type="text" value="Anna">
+        <label>Team 2</label>
+        <input id="teamTwo" type="text" value="Eva">
+        <label>Team 3</label>
+        <input id="teamTree" type="text" value="Fe">
+        <button id="names">Place names</button>
+    </div>
+    <div id="buttons">
+        <button id="BtnOne">+10</button>
+        <button id="BtnTwo">+20</button>
+        <button id="BtnTree">+30</button>
+        <button id="BtnFour">+40</button>
+        <button id="BtnFive">+50</button>
+
+    </div>
+
+    <div id="main-controls">
+        <form>
+            <div class="radiobtn">
+                <p id="teamOneScore"></p>
+                <input type="radio" id="one" name="drone" value="huey" checked />
+                <label id="labelTeamOne" for="one">Huey</label>
+
+            </div>
+
+            <div class="radiobtn">
+                <p id="teamTwoScore"></p>
+                <input type="radio" id="two" name="drone" value="dewey" />
+                <label id="labelTeamTwo" for="two">Dewey</label>
+            </div>
+
+            <div class="radiobtn">
+                <p id="teamTreeScore"></p>
+                <input type="radio" id="tree" name="drone" value="louie" />
+                <label id="labelTeamTree" for="tree">Louie</label>
+            </div>
+        </form>
+        <a href="#" id="count-down">COUNT DOWN TIME
+            <div id="slider" class="slide-right"></div>
+        </a>
+    </div>
+</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
+<script src="./js/firebase.js"></script>
+<script src="./js/init.js"></script>
+<script src="./js/round.js"></script>
+<script src="./js/addPoints.js"></script>
+<script src="./js/countdown.js"></script>
+
+</html>
