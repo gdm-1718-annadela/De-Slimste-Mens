@@ -1,12 +1,9 @@
 function showRound(round) {
   console.log(round)
   if(round == 'one') {
-    document.getElementById('drie-zes-negen').style.display = "block"
-    document.getElementById('team-images').style.display = "flex"
+    document.getElementById('content1').style.display = "flex"
   } else {
-    document.getElementById('drie-zes-negen').style.display = "none"
-    document.getElementById('images').style.display = "none"
-
+    document.getElementById('content1').style.display = "none"
   }
 }
 
